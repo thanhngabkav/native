@@ -1,8 +1,8 @@
-#include <native/library.hpp>
 #include "Person.hpp"
+char *a = (char*) calloc(1000000, sizeof(char));
 int main()
 {
-	Person person;
-	person.setFirstName("First name");
+	printf("asdasdasdas\n");
+//     person.setFirstName("First name");
 	return 0;
 }

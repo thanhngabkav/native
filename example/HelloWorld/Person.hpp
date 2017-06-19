@@ -5,15 +5,14 @@
 
 class Person {
 private:
-	String firstName;
+	char* firstName;
 public:
 	Person() {
 	}
 	~Person() {
 	}
 	Person &setFirstName(String firstName) {
-		self.firstName = firstName;
-		return self;
+		return *this;
 	}
 	
 //	String &getFirstName() {

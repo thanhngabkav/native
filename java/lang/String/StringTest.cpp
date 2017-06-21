@@ -68,7 +68,7 @@ TEST (JavaLang, StringEquals) {
 	// Given two String objects with same value - Return they should equal
 	String stringEqual1 = "Hello World";
 	String stringEqual2 = "Hello World";
-	ASSERT_TRUE(instanceof<String>(stringEqual1));
+	ASSERT_TRUE(instanceOf<String>(stringEqual1));
 	ASSERT_TRUE(stringEqual1.equals(stringEqual2));
 	ASSERT_TRUE(stringEqual1 == stringEqual2);
 

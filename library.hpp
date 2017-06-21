@@ -33,9 +33,9 @@
 #include "java/Security.hpp"
 #include "java/Vendor.hpp"
 #include "java/Util.hpp"
-#include "unit_test.h"
 
-#define self (*this)
+// Unit Test is used by default
+#include "unit_test.h"
 
 // In Java, Java::Lang is imported by default
 using namespace Java::Lang;

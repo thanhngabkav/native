@@ -61,7 +61,7 @@ namespace Java {
 				if (hashCode() == o.hashCode()) {
 					return 0;
 				}
-				if (instanceof<Integer>(o)) {
+				if (instanceOf<Integer>(o)) {
 					if (original < o.original) {
 						return -1;
 					} else if (original == o.original) {

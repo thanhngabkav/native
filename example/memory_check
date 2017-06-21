@@ -1,0 +1,2 @@
+cd Person && ./debug && cd ../
+cd StringLoop && ./debug && cd ../

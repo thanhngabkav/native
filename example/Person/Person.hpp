@@ -2,7 +2,6 @@
 #define NATIVE_EXAMPLE_PERSON_HPP
 
 #include <native/library.hpp>
-#include <iostream>
 
 class Person {
 private:
@@ -86,7 +85,7 @@ public:
      */
     friend std::ostream &operator<<(std::ostream &os, const Person &target) {
         std::cout << "Full name: " << target.fullname.toString() << std::endl;
-        std::cout << "Age: " << target.age.toString() << std::endl;
+        //std::cout << "Age: " << target.age.toString() << std::endl;
         return os;
     }
 };

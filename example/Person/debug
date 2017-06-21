@@ -1,0 +1,9 @@
+cd ../../
+cmake .
+sudo make uninstall
+make native
+sudo make install
+sudo ldconfig
+cd example/Person
+cmake . && make
+valgrind --track-origins=yes  --error-exitcode=42 --show-leak-kinds=all --show-reachable=yes --leak-check=full ./App

@@ -3,6 +3,7 @@ cmake .
 sudo make uninstall
 make native -j8
 sudo make install
+sudo ldconfig
 cd example/HelloWorld
 cmake .
 make

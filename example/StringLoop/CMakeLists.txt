@@ -25,7 +25,7 @@
 #
 
 cmake_minimum_required(VERSION 2.8)
-project(App CXX)
+project(App C CXX)
 
 # Force Linux and Darwin use GCC
 set(CMAKE_C_COMPILER "gcc")

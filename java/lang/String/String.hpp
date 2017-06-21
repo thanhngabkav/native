@@ -77,7 +77,7 @@ namespace Java {
 				if (Object::equals(anObject)) {
 					return true;
 				}
-				if (instanceof<String>(anObject)) {
+				if (instanceOf<String>(anObject)) {
 					return (boolean) string_equals(original, anObject.toString());
 				}
 				return true;

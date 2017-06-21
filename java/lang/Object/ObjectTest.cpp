@@ -38,21 +38,21 @@ TEST(JavaLang, JavaInstanceOf) {
 	// Given a String instance - Return it should be an instance of String
 	String stringInstanceWithSameClass = "test";
 	String string2 = "abcd";
-	ASSERT_TRUE(instanceof<String>(stringInstanceWithSameClass));
+	ASSERT_TRUE(instanceOf<String>(stringInstanceWithSameClass));
 	ASSERT_FALSE(stringInstanceWithSameClass.equals(string2));
 	
 	// Given a String instance - Return it should be an instance of Object
 	String stringInstanceWithSameBaseClass;
-	ASSERT_TRUE(instanceof<Object>(stringInstanceWithSameBaseClass));
+	ASSERT_TRUE(instanceOf<Object>(stringInstanceWithSameBaseClass));
 	
 	// Given a Integer instance - Return it should not be an instance of String
 	Integer integer = 1;
-	ASSERT_FALSE(instanceof<String>(integer));
+	ASSERT_FALSE(instanceOf<String>(integer));
 	
 	// Given a Long instance but casted with Object - Return it should be an instance of Long
 	Long longNumber = 1;
 	Object objectLongNumber = longNumber;
-	ASSERT_FALSE(instanceof<Long>(objectLongNumber));
+	ASSERT_FALSE(instanceOf<Long>(objectLongNumber));
 }
 
 TEST(JavaLang, DataTypeBoolean) {

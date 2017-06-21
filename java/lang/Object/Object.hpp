@@ -31,14 +31,15 @@ extern "C" {
 #include "../../../builtin.h"
 };
 
+#include <iostream>
 #include <algorithm>
 #include <vector>
 #include <map>
 #include <type_traits>
 
-// Define instanceof
+// Define instance of
 template <typename Base, typename T>
-bool instanceof(T) {
+bool instanceOf(T) {
 	return std::is_base_of<Base, T>::value;
 }
 

@@ -235,7 +235,13 @@ TEST (JavaLang, StringReplace) {
 }
 
 TEST (JavaLang, StringSplit) {
+	// Test String::split()
+	String textPlus = "Hello Hello Hello ";
+	Array<String> arrayString = textPlus.split(" ");
 
+	for (String item : arrayString) {
+		ASSERT_STR("Hello", item.toString());
+	}
 }
 
 TEST (JavaLang, StringStartsWith) {

@@ -224,7 +224,6 @@ TEST (JavaLang, StringMatches) {
 
 TEST (JavaLang, StringReplace) {
 	String textPlus = "Hello Hello Hello ";
-
 	String result = textPlus.replace('e', 'i');
 	ASSERT_STR("Hillo Hillo Hillo ", result.toString());
 
@@ -238,7 +237,6 @@ TEST (JavaLang, StringSplit) {
 	// Test String::split()
 	String textPlus = "Hello Hello Hello ";
 	Array<String> arrayString = textPlus.split(" ");
-
 	for (String item : arrayString) {
 		ASSERT_STR("Hello", item.toString());
 	}

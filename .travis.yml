@@ -13,8 +13,8 @@ before_script:
 - sudo python misc/server.py &
 - cmake . -DCMAKE_BUILD_TYPE=debug -DCMAKE_VERBOSE_MAKEFILE=true
 script:
-- make native_test -j8
-- ./misc/memory_check  && cd example && ./memory_check
+- make native_test -j8 && ./misc/memory_check
+- cd example && ./memory_check
 after_script:
 - sudo pkill python
 notifications:
